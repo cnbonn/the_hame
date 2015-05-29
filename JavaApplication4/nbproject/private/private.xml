@@ -3,8 +3,9 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/D:/programming/programs/hame/JavaApplication4/src/hero.java</file>
-            <file>file:/D:/programming/programs/hame/JavaApplication4/src/javaapplication4/JavaApplication4.java</file>
+            <file>file:/D:/programming/programs/the_hame/JavaApplication4/src/hame/moveHero.java</file>
+            <file>file:/D:/programming/programs/the_hame/JavaApplication4/src/hame/hame.java</file>
+            <file>file:/D:/programming/programs/the_hame/JavaApplication4/src/hame/window.java</file>
         </group>
     </open-files>
 </project-private>
