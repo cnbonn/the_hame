@@ -74,10 +74,35 @@ public class window extends JFrame
             }
         });
         menu.add( mItem );
-    
-       
         
+        // Settings
+        menu = new JMenu ("Settings");
+        menuBar.add ( menu );
+        
+        //
+        menu = new JMenu ("Help");
+        menuBar.add ( menu );
+        
+        mItem = new JMenuItem ( "Combat" );
+        mItem.addActionListener( new ActionListener()
+        {
+            public void actionPerformed( ActionEvent ae)
+            {
+                JFrame combatHelp = new helpMenu();
+                combatHelp.setVisible(true);
+                combatHelp.setSize(300,100);
+                combatHelp.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+            }
+        });
+        menu.add( mItem );
+        mItem = new JMenuItem ( "Chat" );
+        menu.add( mItem );
+        mItem = new JMenuItem ( "Macros" );
+        menu.add( mItem );
+        mItem = new JMenuItem ( "Bug Report" );
+        menu.add( mItem );
     }
+    
     
     
     
