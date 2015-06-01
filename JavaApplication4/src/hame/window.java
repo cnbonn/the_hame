@@ -74,6 +74,13 @@ public class window extends JFrame
             }
         });
         menu.add( mItem );
+        mItem = new JMenuItem ( "Log In" );
+        menu.add( mItem );
+        menu.add( mItem );
+        mItem = new JMenuItem ( "Log Out" );
+        menu.add( mItem );
+        
+        menu.add( mItem );
         
         // Settings
         menu = new JMenu ("Settings");
@@ -91,7 +98,7 @@ public class window extends JFrame
                 JFrame combatHelp = new helpMenu();
                 combatHelp.setVisible(true);
                 combatHelp.setSize(300,300);
-                combatHelp.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+                combatHelp.setDefaultCloseOperation(JFrame.HIDE_ON_CLOSE);
             }
         });
         menu.add( mItem );
@@ -104,7 +111,7 @@ public class window extends JFrame
                 JFrame chatHelp = new helpMenu();
                 chatHelp.setVisible(true);
                 chatHelp.setSize(300,300);
-                chatHelp.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+                chatHelp.setDefaultCloseOperation(JFrame.HIDE_ON_CLOSE);
             }
         });
         mItem = new JMenuItem ( "Macros" );
@@ -116,7 +123,7 @@ public class window extends JFrame
                 JFrame macrosHelp = new helpMenu();
                 macrosHelp.setVisible(true);
                 macrosHelp.setSize(300,300);
-                macrosHelp.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+                macrosHelp.setDefaultCloseOperation(JFrame.HIDE_ON_CLOSE);
             }
         });
         mItem = new JMenuItem ( "Bug Report" );
@@ -128,7 +135,7 @@ public class window extends JFrame
                 JFrame bugReport = new helpMenu();
                 bugReport.setVisible(true);
                 bugReport.setSize(300,300);
-                bugReport.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+                bugReport.setDefaultCloseOperation(JFrame.HIDE_ON_CLOSE);
             }
         });
     }
