@@ -79,7 +79,7 @@ public class window extends JFrame
         menu = new JMenu ("Settings");
         menuBar.add ( menu );
         
-        //
+        //Help
         menu = new JMenu ("Help");
         menuBar.add ( menu );
         
@@ -90,17 +90,47 @@ public class window extends JFrame
             {
                 JFrame combatHelp = new helpMenu();
                 combatHelp.setVisible(true);
-                combatHelp.setSize(300,100);
+                combatHelp.setSize(300,300);
                 combatHelp.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
             }
         });
         menu.add( mItem );
         mItem = new JMenuItem ( "Chat" );
         menu.add( mItem );
+        mItem.addActionListener( new ActionListener()
+        {
+            public void actionPerformed( ActionEvent ae)
+            {
+                JFrame chatHelp = new helpMenu();
+                chatHelp.setVisible(true);
+                chatHelp.setSize(300,300);
+                chatHelp.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+            }
+        });
         mItem = new JMenuItem ( "Macros" );
-        menu.add( mItem );
+        menu.add( mItem) ;
+        mItem.addActionListener( new ActionListener()
+        {
+            public void actionPerformed( ActionEvent ae)
+            {
+                JFrame macrosHelp = new helpMenu();
+                macrosHelp.setVisible(true);
+                macrosHelp.setSize(300,300);
+                macrosHelp.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+            }
+        });
         mItem = new JMenuItem ( "Bug Report" );
         menu.add( mItem );
+        mItem.addActionListener( new ActionListener()
+        {
+            public void actionPerformed( ActionEvent ae)
+            {
+                JFrame bugReport = new helpMenu();
+                bugReport.setVisible(true);
+                bugReport.setSize(300,300);
+                bugReport.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+            }
+        });
     }
     
     

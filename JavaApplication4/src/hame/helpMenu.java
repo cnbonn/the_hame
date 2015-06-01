@@ -33,8 +33,25 @@ class combatHelpMenu extends JFrame
  {
     combatHelpMenu()
     {
-        
-        
-        
+    class helpMenu extends JFrame
+{
+    helpMenu()
+    {
+        super("Combat Help");
     }
- }
+}
+class macrosHelpMenu extends JFrame
+ {
+    macrosHelpMenu()
+    {
+    class helpMenu extends JFrame
+{
+    helpMenu()
+    {
+        super("Macros Help");
+    }
+}     
+    }
+}
+    }
+}
